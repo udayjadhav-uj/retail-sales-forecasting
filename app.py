@@ -204,8 +204,10 @@ hr {
 DATA_PATH = Path("data/train.csv")
 
 if not DATA_PATH.exists():
-    DATA_PATH = Path("data/train_sample.csv")INVENTORY_PATH = Path("inventory.csv")
+    DATA_PATH = Path("data/train_sample.csv")
 
+INVENTORY_PATH = Path("inventory.csv")
+MULTI_RESULTS_PATH = Path("multiple_model_evaluation.csv")
 FEATURES = [
     "day_of_week",
     "day_of_month",
