@@ -4,4 +4,5 @@ __pycache__/
 *.py[cod]
 .DS_Store
 dashboard.log
-EOF
+EOFdata/train.csv
+data/train.csv
