@@ -202,7 +202,9 @@ hr {
 """, unsafe_allow_html=True)
 
 DATA_PATH = Path("data/train.csv")
-INVENTORY_PATH = Path("inventory.csv")
+
+if not DATA_PATH.exists():
+    DATA_PATH = Path("data/train_sample.csv")INVENTORY_PATH = Path("inventory.csv")
 
 FEATURES = [
     "day_of_week",
